@@ -116,7 +116,7 @@ html = """
 
 <div class="ui attached stackable menu">
   <div class="ui container">
-    <a class="item" onclick="javascript:scroller('home', 100);">
+    <a href="https://bilibili.cafe/user/" class="item" onclick="javascript:scroller('home', 100);">
       <i class="home icon"></i> 主页
     </a>
   	<a class="item" onclick="javascript:scroller('net', 900);">
