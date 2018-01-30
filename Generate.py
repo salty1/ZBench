@@ -119,13 +119,7 @@ html = """
     <a class="item" onclick="javascript:scroller('home', 100);">
       <i class="home icon"></i> 主页
     </a>
-    <a class="item" onclick="javascript:scroller('system', 300);">
-      <i class="grid layout icon"></i> 系统信息
-    </a>
-    <a class="item" onclick="javascript:scroller('hdd', 600);">
-      <i class="desktop icon"></i> 硬盘 I/O
-    </a>
-	<a class="item" onclick="javascript:scroller('net', 900);">
+  	<a class="item" onclick="javascript:scroller('net', 900);">
       <i class="sitemap icon"></i> 网络测试
     </a>
 	<a class="item" onclick="javascript:scroller('route', 1600);">
@@ -169,145 +163,11 @@ html = """
 </div>
 <div class="ui hidden divider" id="system"></div>
 
-<h2 class="ui center aligned icon header">
-  <i class="circular Laptop icon"></i>
-  系统信息
-</h2>
-<div class="ui hidden divider"></div>
-<div class="ui container">
-<table class="ui celled striped table">
-  <thead>
-    <tr> 
-      <th>项目</th>
-      <th>数据</th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <td class="collapsing">
-        <i class="Microchip icon"></i> CPU 型号
-      </td>
-      <td>{0}</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="Microchip icon"></i> CPU 核心数
-      </td>
-      <td>{1}</td>
-      
-    </tr>
-    <tr>
-      <td>
-        <i class="Microchip icon"></i> CPU 主频
-      </td>
-      <td>{2}</td>
-      
-    </tr>
-    <tr>
-      <td>
-        <i class="Archive icon"></i> 硬盘大小
-      </td>
-      <td>{3}</td>
-      
-    </tr>
-    <tr>
-      <td>
-        <i class="Lightning icon"></i> 内存大小
-      </td>
-      <td>{4}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="Database icon"></i> SWAP 交换空间大小
-      </td>
-      <td>{5}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="Bar Chart icon"></i> 在线时长
-      </td>
-      <td>{6}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="Pie Chart icon"></i> 系统负载
-      </td>
-      <td>{7}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="Windows icon"></i> 系统
-      </td>
-      <td>{8}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="Columns icon"></i> 架构
-      </td>
-      <td>{9}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="File Code Outline icon"></i> 核心
-      </td>
-      <td>{10}</td>
-      
-    </tr>
-	<tr>
-      <td>
-        <i class="Group Object icon"></i> 虚拟化技术
-      </td>
-      <td>{11}</td>
-      
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
 
-<div class="ui hidden divider" id="hdd"></div>
 
-<h2 class="ui center aligned icon header">
-  <i class="circular Clone icon"></i>
-  硬盘 I/O
-</h2>
-<div class="ui hidden divider"></div>
-<div class="ui container">
-<table class="ui celled striped table">
-  <thead>
-    <tr>
-	<th>次数</th>
-      <th>速度</th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <td class="collapsing">
-        <i class="folder icon"></i> 第一次测试
-      </td>
-      <td>{12}</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="folder icon"></i> 第二次测试
-      </td>
-      <td>{13}</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="folder icon"></i> 第三次测试
-      </td>
-      <td>{14}</td>
-    </tr>
 
-  </tbody>
-</table>
-</div>
 
 
 
