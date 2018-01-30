@@ -134,17 +134,7 @@ next() {
     printf "%-74s\n" "-" | sed 's/\s/-/g'
 }
 
-speed_test() {
-    local speedtest=$(wget -4O /dev/null -T300 $1 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}')
-    local ipaddress=$(ping -c1 -n `awk -F'/' '{print $3}' <<< $1` | awk -F'[()]' '{print $2;exit}')
-    local nodeName=$2
-    local latency=$(ping $ipaddress -c 3 | grep avg | awk -F / '{print $5}')" ms"
-    printf "${YELLOW}%-26s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${ipaddress}" "${speedtest}" "${latency}"
-    #Record Speed Data
-    echo ${ipaddress} >> /tmp/speed.txt
-    echo ${speedtest} >> /tmp/speed.txt
-    echo ${latency} >> /tmp/speed.txt
-}
+
 
 
 speed_test_cn(){
