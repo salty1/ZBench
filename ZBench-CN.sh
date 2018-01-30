@@ -313,7 +313,7 @@ speed_cn && next
 python /tmp/ZPing-CN.py
 next
 
-wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/ZBench/master/Generate.py >> /dev/null 2>&1
+wget -N --no-check-certificate https://github.com/salty1/ZBench/raw/master/Generate.py >> /dev/null 2>&1
 python Generate.py && rm -rf Generate.py && cp /root/report.html /tmp/report/index.html
 echo "您的测评报告已保存在 /root/report.html"
 
