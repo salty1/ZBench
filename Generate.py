@@ -141,19 +141,7 @@ html = """
   </div>
 </div>
 
-<div class="ui hidden divider"></div>
-<div class="ui container">
-<div class="ui message red">
-<i class="close icon"></i>
-  <div class="header">
-    您正在使用的是开发中的项目。
-  </div>
-  <p>此程序正处于开发版, 我们无法保证在运行过程中不会出错. 我们将在近期测试后放出正式版，敬请期待.</p>
-</div>
-</div>
-<div class="ui hidden divider"></div>
-<div class="ui container">
-<div class="ui message">
+
   <div class="header">
     测试数据准确性说明
   </div>
