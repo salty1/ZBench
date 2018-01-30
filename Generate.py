@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 def change_to_list(filename):
-    content = open(filename,"r").read().strip()
+    content = open(filename,"r").read()
     return list(content.split("\n"))
 
 
